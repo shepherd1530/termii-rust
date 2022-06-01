@@ -1,15 +1,16 @@
 [package]
 name = "termii-rust"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 license = "MIT"
 description = "Rust SDK for termii a messaging provider."
 keywords = ["termii", "sms", "client"]
 categories = ["web-programming::http-client"]
-repository = "https://github.com/shepherd1530/termii_rust"
-homepage = "https://github.com/shepherd1530/termii_rust"
+repository = "https://github.com/shepherd1530/termii-rust"
+homepage = "https://github.com/shepherd1530/termii-rust"
 authors = ["Samuel Ajisegiri <samajisegiri@gmail.com>"]
 readme = "README.md"
+documentation = "https://docs.rs/termii-rust/"
 
 
 
@@ -32,3 +33,7 @@ blocking = ["reqwest/blocking", "reqwest/json"]
 [lib]
 name = "termii_rust"
 path = "src/lib/mod.rs"
+
+
+[package.metadata.docs.rs]
+all-features = true
